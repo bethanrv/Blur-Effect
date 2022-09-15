@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 1,
+  "name": "Blurify",
+  "version": "1.0",
+
+  "description": "Blurs selected elements for secure sharing",
+
+  "icons": {
+    "48": "icons/blur48.png",
+    "96": "icons/blur96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*"],
+      "js": ["blurify.js"]
+    }
+  ]
+
+}
